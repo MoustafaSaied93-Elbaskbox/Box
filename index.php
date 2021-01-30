@@ -1,67 +1,13 @@
-﻿<!DOCTYPE html>
-<html lang="ar" dir="rtl">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>صندوق البسقلون  </title>
-    <!-- plugins:css -->
+<?php  
 
+include('inc/header.php');
 
-
-    <link rel="stylesheet" href="./assets/vendors/mdi/css/materialdesignicons.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.eot">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.ttf">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.woff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.woff2">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css.map">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.min.css.map">
-    <link rel="stylesheet" href="./assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="./assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="./assets/vendors/jvectormap/jquery-jvectormap.css">
-    <link rel="stylesheet" href="./assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="./assets/vendors/owl-carousel-2/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/vendors/owl-carousel-2/owl.theme.default.min.css">
-
-
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
+?>
 
 
 
 
-
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="./assets/css/modern-vertical/style.css">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="./assets/images/favicon.png" />
-
-
-<style>
-
-div.dataTables_wrapper div.dataTables_filter {
-    text-align: left;}
-    #pa{
-
-      padding-top: 9px;
-
-
-    }
-
-
-</style>
-
-
-  </head>
   <body class="rtl">
     <div class="container-scroller">
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -537,48 +483,10 @@ div.dataTables_wrapper div.dataTables_filter {
     <!-- container-scroller -->
     <!-- plugins:js -->
 
-    <script src="./assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="./assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="./assets/vendors/progressbar.js/progressbar.min.js"></script>
-    <script src="./assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="./assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="./assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="./assets/js/off-canvas.js"></script>
-    <script src="./assets/js/hoverable-collapse.js"></script>
-    <script src="./assets/js/misc.js"></script>
-    <script src="./assets/js/settings.js"></script>
-    <script src="./assets/js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="./assets/js/dashboard.js"></script>
-    <!-- End custom js for this page -->
-
-    <script src="./assets/vendors/datatables.net/jquery.dataTables.js"></script>
-    <script src="./assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-
-    <script src="./assets/js/data-table.js"></script>
+    <?php 
+    include('inc/footer.php');
 
 
-<script>
+     ?>
 
-
-
-
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
-
-
-
-
- </script>
-
-
-
-  </body>
-
-</html>
+    
