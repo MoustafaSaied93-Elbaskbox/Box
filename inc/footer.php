@@ -36,8 +36,8 @@
     <script src="./assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
     <script src="./assets/js/data-table.js"></script>
     <script src="./assets/js/toastr.min.js"></script>
-    <script src="./assets/js/add.js"></script>
     <script src="./assets/js/delet.js"></script>
+    <script src="./assets/js/add.js"></script>
 
 
 

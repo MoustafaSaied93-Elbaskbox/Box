@@ -204,3 +204,4 @@ while ($family = mysqli_fetch_assoc($fam)){
 <?php
 include('inc/footer.php');
 ?>
+  <script src="./assets/js/add.js"></script>
