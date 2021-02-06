@@ -168,18 +168,41 @@ while ($family = mysqli_fetch_assoc($fam)){
 $num = 1;
 while ($family = mysqli_fetch_assoc($fam)){
 
+<<<<<<< Updated upstream
   $familystatus=$family['Status'];
+=======
+<table id="example" class="table table-striped table-bordered" style="width:100%;text-align: center;">
+   <thead>
+  <tr>
+ <th>اسم العائلة</th>
+  <th>حالة العائلة</th>
+  <th>العمليات</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td>الحجاجية</td>
+  <td>مفعلة</td>
+  <td>
+          <a href="#" class="btn btn-warning" >تعديل </a>
+          <a href="#"  class="btn btn-danger" > حذف <i class="fa fa-fw fa-trash"></i> </a>
+>>>>>>> Stashed changes
 
   if($familystatus==1)
   {
 
+<<<<<<< Updated upstream
     $value="مفعل";
   }
   else{
+=======
+       </tr>
+>>>>>>> Stashed changes
 
     $value="معطل";
   }
 
+<<<<<<< Updated upstream
 
     echo ';
       <tr>
@@ -213,6 +236,22 @@ while ($family = mysqli_fetch_assoc($fam)){
     </div>
     </div>
       </div>
+=======
+   </tbody>
+    <tfoot>
+     <tr>
+  <th>اسم العائلة</th>
+  <th>حالة العائلة</th>
+   <th>العمليات</th>
+  </tr>
+   </tfoot>
+   </table>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+>>>>>>> Stashed changes
     </div>
     </div>
 
