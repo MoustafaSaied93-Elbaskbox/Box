@@ -12,7 +12,6 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-
     <script src="./assets/js/jquery-3.3.1.js"></script>
     <script src="./assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
@@ -33,13 +32,14 @@
     <!-- Custom js for this page -->
     <script src="./assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
-
     <script src="./assets/vendors/datatables.net/jquery.dataTables.js"></script>
     <script src="./assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-
     <script src="./assets/js/data-table.js"></script>
-
     <script src="./assets/js/toastr.min.js"></script>
+    <script src="./assets/js/add.js"></script>
+    <script src="./assets/js/delet.js"></script>
+
+
 
 <script>
 
