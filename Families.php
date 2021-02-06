@@ -28,6 +28,8 @@ include('inc/header.php');
 
     <div class="row">
 
+
+
       <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
         <a href="link_Families.php">
         <div class="card">
@@ -111,19 +113,19 @@ include('inc/header.php');
   <!-- Large modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">إضافة عائلة جديدة</button>
 
-  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-                          <div class="col-12 grid-margin stretch-card">
-                            <div class="card">
-                              <div class="card-body">
-                                <h4 class="card-title">ادخل عائلة جديدة</h4>
-                                <p class="card-description">العائلات </p>
-                                <form class="forms-sample">
-                                  <div class="form-group">
-                                    <label for="exampleInputName1">اسم العائلة</label>
-                                    <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
-                                  </div>
+         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+         <div class="col-12 grid-margin stretch-card">
+          <div class="card">
+          <div class="card-body">
+          <h4 class="card-title">ادخل عائلة جديدة</h4>
+          <p class="card-description">العائلات </p>
+          <form class="forms-sample">
+          <div class="form-group">
+          <label for="exampleInputName1">اسم العائلة</label>
+          <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+          </div>
 
   <fieldset class="form-group">
     <div class="row">
