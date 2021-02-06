@@ -1,6 +1,7 @@
 
 <?php
 include('inc/header.php');
+include('inc/confirmation.php');
 ?>
 
 
@@ -180,7 +181,6 @@ while ($family = mysqli_fetch_assoc($fam)){
     $value="معطل";
   }
 
-
     echo ';
       <tr>
 <td>'.$num .' </td>
@@ -189,8 +189,7 @@ while ($family = mysqli_fetch_assoc($fam)){
   <td>'.$value.'</td>
   <td>
 <a href="#" class="btn btn-warning" >تعديل </a>
- <a href="#"  class="btn btn-danger" > حذف <i class="fa fa-fw fa-trash"></i> </a>
-
+ <a href="#" onclick="Delete('.$family['Family_ID'].',1,this)" class="btn btn-danger" data-toggle="modal" data-target="#DeleteConfirmation" > حذف <i class="fa fa-fw fa-trash"></i> </a>
   </td>
 
 </tr>
@@ -217,27 +216,12 @@ while ($family = mysqli_fetch_assoc($fam)){
     </div>
 
     <!-- content-wrapper ends -->
-
-
-
-
-
-
-
-
-
-
 <?php
 include('inc/footer.php');
 ?>
-
-
 <script type="text/javascript">
   $(document).ready(function () {
 
-    var Status=$("#hiddeninput").val();
-
-    console.log(Status);
 
        $('#SaveRecord').click(function (event) {
 
@@ -301,6 +285,47 @@ include('inc/footer.php');
                 
             });  
 
+
+
+
+
+  function Delete(id,page,t){
+
+       window.var1=id;
+        window.var3=t;
+       
+        if(page==1)
+       {
+         window.var2="Familes";
+
+       }
+        
+    }
+
+    var ConfirmDelete = function () {
+      alert("rr");
+
+      var ID = window.var1;
+      var page=window.var2;
+      var col=window.var3
+    var $button = $(this);
+        $.ajax({
+         type: "GET",
+         cache: false,
+         async: true,
+        url: "DeleteFunction.php" ,
+        data:{ID:ID,page:page},
+       success: function (result) {   
+         $("#DeleteConfirmation").modal("hide");                                 
+         toastr.error("تم الحذف بنجاح");
+           $tr= $(col).closest("tr");
+          $tr.find('td').fadeOut(700, function () {
+        $tr.remove();  
+         });
+       // window.setTimeout(function () { location.reload() }, 1000)
+                    }
+                })
+            }
   });
 
 </script>
