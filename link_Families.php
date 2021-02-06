@@ -23,95 +23,62 @@ include('inc/header.php');
 
 
 
-<div class="main-panel">
-  <div class="content-wrapper">
 
-    <div class="row">
+<!-- Large modal -->
 
-      <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-        <a href="link_Families.php">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex align-items-center align-self-start">
-                  <h3 class="mb-0">الاعضاء : 80</h3>
-                  <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
-                </div>
-              </div>
-
-            </div>
-            <h6 class="text-muted font-weight-normal">الحجاجية</h6>
-          </div>
-        </div>
-          </a>
-      </div>
-
-
-      <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-        <a href="link_Families.php">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex align-items-center align-self-start">
-                  <h3 class="mb-0">الاعضاء : 80</h3>
-                  <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
-                </div>
-              </div>
-
-            </div>
-            <h6 class="text-muted font-weight-normal">الحجاجية</h6>
-          </div>
-        </div>
-          </a>
-      </div>
-      <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-        <a href="link_Families.php">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex align-items-center align-self-start">
-                  <h3 class="mb-0">الاعضاء : 80</h3>
-                  <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
-                </div>
-              </div>
-
-            </div>
-            <h6 class="text-muted font-weight-normal">الحجاجية</h6>
-          </div>
-        </div>
-          </a>
-      </div>
-      <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-        <a href="link_Families.php">
-        <div class="card">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex align-items-center align-self-start">
-                  <h3 class="mb-0">الاعضاء : 80</h3>
-                  <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
-                </div>
-              </div>
-
-            </div>
-            <h6 class="text-muted font-weight-normal">الحجاجية</h6>
-          </div>
-        </div>
-          </a>
-      </div>
-
-
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+                        <div class="col-12 grid-margin stretch-card">
+                          <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">ادخل عائلة جديدة</h4>
+                              <p class="card-description">العائلات </p>
+                              <form class="forms-sample">
+                                <div class="form-group">
+                                  <label for="exampleInputName1">اختار اسم العائلة</label>
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputName1">اسم العضو</label>
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputName1">رقم الهاتف</label>
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputName1">اختار المنطقة</label>
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputName1">اختار الشهر</label>
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputName1">مبلغ المساهمة</label>
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputName1">حالة العضو</label>
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                </div>
+                                <button type="submit" class="btn btn-primary mr-2">حفظ</button>
+                                <button  class="btn btn-secondary" data-dismiss="modal">الغاء</button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                  <!-- content-wrapper ends -->
     </div>
-
+  </div>
+</div>
 
 
   <!-- Large modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">إضافة عائلة جديدة</button>
 
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
                           <div class="col-12 grid-margin stretch-card">
@@ -150,11 +117,16 @@ include('inc/header.php');
         </nav>
       </div>
 
+
       <div class="card">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" style="width:180px;">إضافة عائلة جديدة</button>
+
         <div class="card-body">
-          <h4 class="card-title">Data table</h4>
+
+          <h4 class="card-title">جدول البيانات</h4>
           <div class="row">
             <div class="col-12">
+
               <div class="table-responsive">
 
 

@@ -79,7 +79,7 @@ div.dataTables_wrapper div.dataTables_filter {
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">اسم العضو</h5>
+                  <h5 class="mb-0 font-weight-normal">خطيب بية لطفى</h5>
                   <span>مستخدم</span>
                 </div>
               </div>
@@ -125,7 +125,7 @@ div.dataTables_wrapper div.dataTables_filter {
           </li>
 
           <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="Families.php">
               <span class="menu-icon">
                 <i class="mdi mdi-texture"></i>
               </span>
@@ -327,13 +327,7 @@ div.dataTables_wrapper div.dataTables_filter {
                           </div>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
-                            <div class="navbar-profile">
-                              <img class="img-xs rounded-circle" src="../../../assets/images/faces/face15.jpg" alt="">
-                              <p class="mb-0 d-none d-sm-block navbar-profile-name">اسم العضو</p>
-                              <i class="mdi mdi-menu-down d-none d-sm-block"></i>
-                            </div>
-                          </a>
+            
                           <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
                             <h6 class="p-3 mb-0">الملف الشخصي</h6>
                             <div class="dropdown-divider"></div>
