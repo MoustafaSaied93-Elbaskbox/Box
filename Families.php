@@ -4,7 +4,6 @@ include('inc/header.php');
 include('inc/confirmation.php');
 ?>
 
-
 <style>
 .col-xl-3 a{
   color: #af9128;
@@ -21,35 +20,26 @@ include('inc/confirmation.php');
 
 <div class="main-panel">
   <div class="content-wrapper">
-
     <div class="row">
-
-
-<?php  
+<?php
 $fam = mysqli_query($conn, "SELECT * FROM  family");
 $num = 1;
 while ($family = mysqli_fetch_assoc($fam)){
 
   if($family["Status"]==1)
   {
-
-
     $link ='<a href="link_Families.php?loop_link='.$family['Family_ID'].'">';
   }
 
   else
   {
-
     $link= '<span class="disable-links"><a href="link_Families.php?loop_link='.$family['Family_ID'].'"style: span.disable-links {pointer-events: none;} ></a></span>';
   }
-
-
-
 
  echo '
  <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
  '. $link.'
-   
+
    <div class="card">
      <div class="card-body">
        <div class="row">
@@ -69,7 +59,6 @@ while ($family = mysqli_fetch_assoc($fam)){
 ';
  $num ++;
 }; ?>
-
 
     </div>
 
@@ -94,9 +83,6 @@ while ($family = mysqli_fetch_assoc($fam)){
     <label for="exampleInputName1">اسم العائلة</label>
   <input type="text" class="form-control" id="FamilyName" placeholder="الاسم">
   </div>
-
-
-
   <fieldset class="form-group">
     <div class="row">
       <legend class="col-form-label col-sm-2 pt-0">حالة العائلة</legend>
@@ -111,7 +97,6 @@ while ($family = mysqli_fetch_assoc($fam)){
                 <input type="radio" class="form-check-input" id="radio2" name="optradio" value="0"> معطلة
               </label>
             </div>
-
       </div>
     </div>
   </fieldset>
@@ -162,7 +147,7 @@ while ($family = mysqli_fetch_assoc($fam)){
   </thead>
   <tbody>
 
-   <?php  
+   <?php
 
 
  $fam = mysqli_query($conn, "SELECT * FROM  family");
@@ -219,113 +204,4 @@ while ($family = mysqli_fetch_assoc($fam)){
 <?php
 include('inc/footer.php');
 ?>
-<script type="text/javascript">
-  $(document).ready(function () {
-
-
-       $('#SaveRecord').click(function (event) {
-
-            event.preventDefault();
-
-            var formData = new FormData();
-            var FamilyName=$("#FamilyName").val();
-          
-                     
-            if(FamilyName=="")
-            {
-                $("#FamilyName").focus();
-
-                return false;
-
-            } 
-
-            var radioValue = $("input[name='optradio']:checked").val();
-            
-
-                if(radioValue==1)
-                {
-
-                  alert("active");
-
-                  var status=1;
-                } 
-                else{
-                  alert(" not active");
-
-                  var status=0;
-
-
-                }           
-           
-            var pages="Families";
-
-            formData.append("FamilyName", FamilyName);
-            formData.append("Statu", status);
-            formData.append("page", pages);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open("POST", "addfunction.php", true);
-                xhr.addEventListener("load", function (evt) { UploadComplete(evt); }, false);
-                xhr.addEventListener("error", function (evt) { UploadFailed(evt); }, false);
-                xhr.send(formData);
-
-                function UploadComplete(evt) {
-                
-                    $(".modal fade bd-example-modal-lg").modal("hide");
-
-                    toastr.success("تمت الاضافة بنجاح");
-                    window.setTimeout(function () { location.reload() }, 3000)
-                }
-
-                function UploadFailed(evt) {
-                    alert("There was an error attempting to upload the file.");
-
-                }
-                
-            });  
-
-
-
-
-
-  function Delete(id,page,t){
-
-       window.var1=id;
-        window.var3=t;
-       
-        if(page==1)
-       {
-         window.var2="Familes";
-
-       }
-        
-    }
-
-    var ConfirmDelete = function () {
-      alert("rr");
-
-      var ID = window.var1;
-      var page=window.var2;
-      var col=window.var3
-    var $button = $(this);
-        $.ajax({
-         type: "GET",
-         cache: false,
-         async: true,
-        url: "DeleteFunction.php" ,
-        data:{ID:ID,page:page},
-       success: function (result) {   
-         $("#DeleteConfirmation").modal("hide");                                 
-         toastr.error("تم الحذف بنجاح");
-           $tr= $(col).closest("tr");
-          $tr.find('td').fadeOut(700, function () {
-        $tr.remove();  
-         });
-       // window.setTimeout(function () { location.reload() }, 1000)
-                    }
-                })
-            }
-  });
-
-</script>
+  <script src="./assets/js/add.js"></script>
