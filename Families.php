@@ -124,26 +124,28 @@ include('inc/header.php');
                                     <label for="exampleInputName1">اسم العائلة</label>
                                     <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
                                   </div>
-                                  <fieldset class="form-group">
+
+  <fieldset class="form-group">
     <div class="row">
       <legend class="col-form-label col-sm-2 pt-0">حالة العائلة</legend>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-          <label class="form-check-label" for="gridRadios1">
-            مفعلة
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-          <label class="form-check-label" for="gridRadios2">
-            معطلة
-          </label>
-        </div>
+      <div class="col-sm-8">
+        <div class="form-check-inline">
+              <label class="form-check-label" for="radio1">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked> مفعلة
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio2">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2"> معطلة
+              </label>
+            </div>
 
       </div>
     </div>
   </fieldset>
+
+
+
                                   <button type="submit" class="btn btn-primary mr-2">حفظ</button>
                                   <button  class="btn btn-secondary" data-dismiss="modal">الغاء</button>
                                 </form>
