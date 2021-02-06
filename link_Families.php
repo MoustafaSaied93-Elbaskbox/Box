@@ -22,8 +22,6 @@ include('inc/header.php');
 
 
 
-
-
 <!-- Large modal -->
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -37,27 +35,47 @@ include('inc/header.php');
                               <form class="forms-sample">
                                 <div class="form-group">
                                   <label for="exampleInputName1">اختار اسم العائلة</label>
-                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
-                                </div>
+                                  <select id="d_17" class="form-control">
+                                      <option value=""> الصوفة</option>
+                                      <option value=""> الصوفة</option>
+                                    </select>
+                                   </div>
+
+
+                                   <div class="form-group"> <!-- Date input -->
+                                           <label class="control-label" for="date">Date</label>
+                                           <input class="form-control" id="datepicker" name="date" placeholder="MM/DD/YYY" type="text"/>
+                                         </div>
+
                                 <div class="form-group">
                                   <label for="exampleInputName1">اسم العضو</label>
                                   <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
                                 </div>
                                 <div class="form-group">
                                   <label for="exampleInputName1">رقم الهاتف</label>
-                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="رقم الهاتف">
                                 </div>
                                 <div class="form-group">
                                   <label for="exampleInputName1">اختار المنطقة</label>
-                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
-                                </div>
+                                  <select id="d_17" class="form-control">
+                                      <option value=""> الرياض</option>
+                                      <option value=""> جدة</option>
+                                        <option value="">مكة</option>
+                                          <option value="">القصيم</option>
+                                          <option value="">الدمام</option>
+                                          <option value="">الاحساء</option>
+                                            <option value="">الجبيل</option>
+                                            <option value="">الطائف</option>
+
+                                    </select>
+                                 </div>
                                 <div class="form-group">
                                   <label for="exampleInputName1">اختار الشهر</label>
                                   <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
                                 </div>
                                 <div class="form-group">
                                   <label for="exampleInputName1">مبلغ المساهمة</label>
-                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+                                  <input type="text" class="form-control" id="exampleInputName1" placeholder="المبلغ">
                                 </div>
                                 <div class="form-group">
                                   <label for="exampleInputName1">حالة العضو</label>
@@ -177,8 +195,6 @@ include('inc/header.php');
     </div>
 
     <!-- content-wrapper ends -->
-
-
 
 
 

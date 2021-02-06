@@ -23,6 +23,22 @@ include('inc/header.php');
 
     <div class="row">
 
+<<<<<<< HEAD
+
+
+      <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+        <a href="link_Families.php">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex align-items-center align-self-start">
+                  <h3 class="mb-0">الاعضاء : 80</h3>
+                  <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
+                </div>
+              </div>
+=======
+>>>>>>> 22308079303222bd385b985c54626f0c12f7f944
 
 <?php  
 $fam = mysqli_query($conn, "SELECT * FROM  family");
@@ -77,6 +93,21 @@ while ($family = mysqli_fetch_assoc($fam)){
   <!-- Large modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">إضافة عائلة جديدة</button>
 
+<<<<<<< HEAD
+         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+         <div class="modal-content">
+         <div class="col-12 grid-margin stretch-card">
+          <div class="card">
+          <div class="card-body">
+          <h4 class="card-title">ادخل عائلة جديدة</h4>
+          <p class="card-description">العائلات </p>
+          <form class="forms-sample">
+          <div class="form-group">
+          <label for="exampleInputName1">اسم العائلة</label>
+          <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
+          </div>
+=======
 
 
   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -95,6 +126,7 @@ while ($family = mysqli_fetch_assoc($fam)){
   </div>
 
 
+>>>>>>> 22308079303222bd385b985c54626f0c12f7f944
 
   <fieldset class="form-group">
     <div class="row">
