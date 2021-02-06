@@ -1,4 +1,11 @@
+<?php 
+
+include_once("inc/config.php");
+
+ ?>
+
 <!DOCTYPE html>
+
 <html lang="ar" dir="rtl">
 
 <head>
@@ -29,12 +36,8 @@
     <link rel="stylesheet" href="./assets/vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="./assets/vendors/owl-carousel-2/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/vendors/owl-carousel-2/owl.theme.default.min.css">
-
-
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
-
-
-
+  
 
 
     <!-- End plugin css for this page -->
@@ -44,6 +47,7 @@
     <link rel="stylesheet" href="./assets/css/modern-vertical/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="./assets/images/favicon.png" />
+     <link rel="stylesheet" href="./assets/css/toastr.min.css">
 
 
 <style>
