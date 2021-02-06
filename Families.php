@@ -7,7 +7,18 @@ include('inc/header.php');
 
 
 
-
+<style>
+.col-xl-3 a{
+  color: #af9128;
+}
+.col-xl-3 a:hover {
+ opacity: 1;
+ list-style: none;
+ text-decoration: none;
+ display: inline-block;
+ color: white;
+}
+</style>
 
 
 
@@ -18,9 +29,8 @@ include('inc/header.php');
     <div class="row">
 
       <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-
+        <a href="">
         <div class="card">
-                <a href="#">
           <div class="card-body">
             <div class="row">
               <div class="col-12">
@@ -33,12 +43,13 @@ include('inc/header.php');
             </div>
             <h6 class="text-muted font-weight-normal">الحجاجية</h6>
           </div>
-              </a>
         </div>
-
+          </a>
       </div>
 
+
       <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+        <a href="">
         <div class="card">
           <div class="card-body">
             <div class="row">
@@ -53,37 +64,44 @@ include('inc/header.php');
             <h6 class="text-muted font-weight-normal">الحجاجية</h6>
           </div>
         </div>
-      </div>  <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-12">
-                  <div class="d-flex align-items-center align-self-start">
-                    <h3 class="mb-0">الاعضاء : 80</h3>
-                    <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
-                  </div>
+          </a>
+      </div>
+      <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+        <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex align-items-center align-self-start">
+                  <h3 class="mb-0">الاعضاء : 80</h3>
+                  <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
                 </div>
-
               </div>
-              <h6 class="text-muted font-weight-normal">الحجاجية</h6>
-            </div>
-          </div>
-        </div>  <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="d-flex align-items-center align-self-start">
-                      <h3 class="mb-0">الاعضاء : 80</h3>
-                      <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
-                    </div>
-                  </div>
 
+            </div>
+            <h6 class="text-muted font-weight-normal">الحجاجية</h6>
+          </div>
+        </div>
+          </a>
+      </div>
+      <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+        <a href="">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex align-items-center align-self-start">
+                  <h3 class="mb-0">الاعضاء : 80</h3>
+                  <p class="text-success mr-2 mb-0 font-weight-medium">الاجمالى : 2542</p>
                 </div>
-                <h6 class="text-muted font-weight-normal">الحجاجية</h6>
               </div>
+
             </div>
+            <h6 class="text-muted font-weight-normal">الحجاجية</h6>
           </div>
+        </div>
+          </a>
+      </div>
 
 
     </div>
@@ -107,7 +125,7 @@ include('inc/header.php');
                                     <input type="text" class="form-control" id="exampleInputName1" placeholder="الاسم">
                                   </div>
                                   <button type="submit" class="btn btn-primary mr-2">حفظ</button>
-                                  <button class="btn btn-dark">الغاء</button>
+                                  <button  class="btn btn-secondary" data-dismiss="modal">الغاء</button>
                                 </form>
                               </div>
                             </div>
