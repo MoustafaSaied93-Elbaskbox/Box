@@ -18,6 +18,7 @@ return false;
                 alert(" not active");
                 var status=0;
               }
+              alert(status);
           var pages="Families";
           formData.append("FamilyName", FamilyName);
           formData.append("Statu", status);
@@ -38,3 +39,5 @@ return false;
               }
 
           });
+
+   });
