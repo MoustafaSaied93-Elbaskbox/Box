@@ -2,7 +2,6 @@
  <?php include('inc/header.php'); ?>
 
 
-			
 
 				<!-- Content wrapper start -->
 				<div class="content-wrapper">
@@ -18,7 +17,19 @@
 											<i class="icon-account_circle"></i>
 										</div>
 										<div class="stats-detail">
-											<h3>185k</h3>
+                      <?php
+                     $query = mysqli_query($conn, "SELECT * FROM family");
+                     if ($query)  {
+                       $row = mysqli_num_rows($query);
+                          if ($row){
+                              echo '
+
+                     	<h3> '.$row.' عائلات</h3>
+
+                      ';
+                       }
+                     }
+                     ?>
 											<p>اجمالى العائلات</p>
 										</div>
 									</div>

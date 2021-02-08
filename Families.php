@@ -144,7 +144,7 @@ else{
 <td>'.$value.'</td>
 <td>
 
-<a href="edit_Families.php?e_f='.$family['Family_ID'].'" class="btn btn-outline-warning" >تعديل </a>
+<a href="e_Families.php?e_f='.$family['Family_ID'].'" class="btn btn-outline-warning" >تعديل </a>
 <a href="#" onclick="Delete('.$family['Family_ID'].',1,this)" class="btn btn-danger" data-toggle="modal" data-target="#DeleteConfirmation" > حذف <i class="fa fa-fw fa-trash"></i> </a>
 </td>
 </tr>
