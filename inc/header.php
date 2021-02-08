@@ -1,368 +1,313 @@
-<?php 
 
-include_once("inc/config.php");
+<?php
+
+include_once("config.php");
 
  ?>
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html lang="ar" dir="rtl">
+		<!-- Meta -->
+		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
+		<meta name="author" content="ParkerThemes">
+		<link rel="shortcut icon" href="img\fav.png">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>صندوق البسقلون  </title>
-    <!-- plugins:css -->
-
-
-
-    <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.eot">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.ttf">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.woff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/fonts/materialdesignicons-webfont.woff2">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css.map">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.min.css.map">
-    <link rel="stylesheet" href="./assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="./assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="./assets/vendors/jvectormap/jquery-jvectormap.css">
-    <link rel="stylesheet" href="./assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="./assets/vendors/owl-carousel-2/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/vendors/owl-carousel-2/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap.min.css">
-  
+		<!-- Title -->
+		<title>صندوق البسقلون  </title>
 
 
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="./assets/css/modern-vertical/style.css">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="./assets/images/favicon.png" />
-     <link rel="stylesheet" href="./assets/css/toastr.min.css">
+		<!-- *************
+			************ Common Css Files *************
+		************ -->
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" href="css\bootstrap.min.css">
+
+		<!-- Icomoon Font Icons css -->
+		<link rel="stylesheet" href="fonts\style.css">
+
+		<!-- Main css -->
+		<link rel="stylesheet" href="css\main.css">
+
+   <link rel="stylesheet" href="css/toastr.min.css">
+		<!-- *************
+			************ Vendor Css Files *************
+		************ -->
+		<!-- DateRange css -->
+		<link rel="stylesheet" href="vendor\daterange\daterange.css">
+
+		<!-- Chartist css -->
+		<link rel="stylesheet" href="vendor\chartist\css\chartist.min.css">
+		<link rel="stylesheet" href="vendor\chartist\css\chartist-custom.css">
+		<!-- DateRange css -->
+		<link rel="stylesheet" href="vendor\daterange\daterange.css">
+
+		<!-- Datepicker css -->
+		<link rel="stylesheet" href="vendor\datepicker\css\classic.css">
+		<link rel="stylesheet" href="vendor\datepicker\css\classic.date.css">
 
 
-<style>
+	</head>
+	<body>
 
-div.dataTables_wrapper div.dataTables_filter {
-    text-align: left;}
-    #pa{
-
-      padding-top: 9px;
-
-
-    }
-
-
-</style>
+		<!-- Loading starts -->
+		<div id="loading-wrapper">
+			<div class="spinner-border" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+		<!-- Loading ends -->
 
 
-  </head>
-  <body class="rtl">
-    <div class="container-scroller">
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-          <a class="sidebar-brand brand-logo" href="#"><img src="./assets/images/logo.svg" alt="logo" /></a>
-          <a class="sidebar-brand brand-logo-mini" href="./assets/images/logo.svg"><img src="./assets/images/logo.svg" alt="logo" /></a>
+		<!-- *************
+			************ Header section start *************
+		************* -->
 
-        </div>
-        <ul class="nav">
-          <li class="nav-item profile">
-            <div class="profile-desc">
-              <div class="profile-pic">
-                <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="./assets/images/faces/face15.jpg" alt="">
-                  <span class="count bg-success"></span>
-                </div>
-                <div class="profile-name">
-                  <h5 class="mb-0 font-weight-normal">خطيب بية لطفى</h5>
-                  <span>مستخدم</span>
-                </div>
-              </div>
-              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-settings text-primary"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">إعدادت الحساب</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-onepassword  text-info"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">تغيير كلمة المرور</p>
-                  </div>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item preview-item">
-                  <div class="preview-thumbnail">
-                    <div class="preview-icon bg-dark rounded-circle">
-                      <i class="mdi mdi-calendar-today text-success"></i>
-                    </div>
-                  </div>
-                  <div class="preview-item-content">
-                    <p class="preview-subject ellipsis mb-1 text-small">عمل قائمة</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item nav-category">
-            <span class="nav-link">التنقل</span>
-          </li>
+		<!-- Header start -->
+		<header class="header">
+			<div class="logo-wrapper">
+				<a href="index.html" class="logo">
+					<img src="img\logo.png" alt="Wafi Admin Dashboard">
+				</a>
+				<a href="#" class="quick-links-btn" data-toggle="tooltip" data-placement="right" title="" data-original-title="Quick Links">
+					<i class="icon-menu1"></i>
+				</a>
+			</div>
+			<div class="header-items">
+				<!-- Custom search start -->
+				<div class="custom-search">
+					<input type="text" class="search-query" placeholder="ابحث....">
+					<i class="icon-search1"></i>
+				</div>
+				<!-- Custom search end -->
 
-          <li class="nav-item menu-items">
-            <a class="nav-link" href="Families.php">
-              <span class="menu-icon">
-                <i class="mdi mdi-texture"></i>
-              </span>
-              <span class="menu-title">العائلات </span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
-              <span class="menu-icon">
-                <i class="mdi mdi-view-list"></i>
-              </span>
-              <span class="menu-title"> مدخلات الصندوق</span>
-              <i class="menu-arrow"></i>
-            </a>
+				<!-- Header actions start -->
+				<ul class="header-actions">
 
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#sidebar-layouts" aria-expanded="false" aria-controls="sidebar-layouts">
-              <span class="menu-icon">
-                <i class="mdi mdi-crosshairs-gps"></i>
-              </span>
-              <span class="menu-title">مخرجات الصندوق</span>
-              <i class="menu-arrow"></i>
-            </a>
+					<li class="dropdown">
+						<a href="#" id="notifications" data-toggle="dropdown" aria-haspopup="true">
+							<i class="icon-bell"></i>
+							<span class="count-label">8</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right lrg" aria-labelledby="notifications">
+							<div class="dropdown-menu-header">
+								Notifications (40)
+							</div>
+							<ul class="header-notifications">
+								<li>
+									<a href="#">
+										<div class="user-img away">
+											<img src="img\user21.png" alt="User">
+										</div>
+										<div class="details">
+											<div class="user-title">Abbott</div>
+											<div class="noti-details">Membership has been ended.</div>
+											<div class="noti-date">Oct 20, 07:30 pm</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="user-img busy">
+											<img src="img\user10.png" alt="User">
+										</div>
+										<div class="details">
+											<div class="user-title">Braxten</div>
+											<div class="noti-details">Approved new design.</div>
+											<div class="noti-date">Oct 10, 12:00 am</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="user-img online">
+											<img src="img\user6.png" alt="User">
+										</div>
+										<div class="details">
+											<div class="user-title">Larkyn</div>
+											<div class="noti-details">Check out every table in detail.</div>
+											<div class="noti-date">Oct 15, 04:00 pm</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" id="userSettings" class="user-settings" data-toggle="dropdown" aria-haspopup="true">
+							<span class="user-name">خطيب لطفى</span>
+							<span class="avatar">ادمن<span class="status busy"></span></span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userSettings">
+							<div class="header-profile-actions">
+								<div class="header-user-profile">
+									<div class="header-user">
+										<img src="img\user.png" alt="Admin Template">
+									</div>
+									<h5>خطيب لطفى</h5>
+									<p>Admin</p>
+								</div>
+								<a href="user-profile.html"><i class="icon-user1"></i> My Profile</a>
+								<a href="account-settings.html"><i class="icon-settings1"></i> Account Settings</a>
+								<a href="login.html"><i class="icon-log-out1"></i> Sign Out</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="quick-settings-btn" data-toggle="tooltip" data-placement="left" title="" data-original-title="Quick Settings">
+							<i class="icon-list"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- Header actions end -->
+			</div>
+		</header>
+		<!-- Header end -->
 
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-icon">
-                <i class="mdi mdi-laptop"></i>
-              </span>
-              <span class="menu-title">فواتير الآجلة</span>
-              <i class="menu-arrow"></i>
-            </a>
+		<!-- Screen overlay start -->
+		<div class="screen-overlay"></div>
+		<!-- Screen overlay end -->
 
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
-              <span class="menu-icon">
-                <i class="mdi mdi-settings"></i>
-              </span>
-              <span class="menu-title">سيارت المشروع </span>
-              <i class="menu-arrow"></i>
-            </a>
 
-          </li>
+		<!-- Quick settings start -->
+		<div class="quick-settings-box">
+			<div class="quick-settings-header">
+				<div class="date-container">Today <span class="date" id="today-date"></span></div>
+				<a href="#" class="quick-settings-box-close">
+					<i class="icon-circle-with-cross"></i>
+				</a>
+			</div>
+			<div class="quick-settings-body">
+				<div class="fullHeight">
+					<div class="quick-setting-list">
+						<h6 class="title">Events</h6>
+						<ul class="list-items">
+							<li>
+								<div class="list-title">Product Launch</div>
+								<div class="list-location">10:00 AM</div>
+							</li>
+							<li>
+								<div class="list-title">Team Meeting</div>
+								<div class="list-location">01:30 PM</div>
+							</li>
+							<li>
+								<div class="list-title">Q&A Session</div>
+								<div class="list-location">02:30 PM</div>
+							</li>
+						</ul>
+					</div>
+					<div class="quick-setting-list">
+						<h6 class="title">Notes</h6>
+						<ul class="list-items">
+							<li>
+								<div class="list-title">Refreshing the list</div>
+								<div class="list-location">03:15 PM</div>
+							</li>
+							<li>
+								<div class="list-title">Not able to click on button</div>
+								<div class="list-location">03:18 PM</div>
+							</li>
+						</ul>
+					</div>
+					<div class="quick-setting-list">
+						<h6 class="title">Quick Settings</h6>
+						<ul class="set-priority-list">
+							<li>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" checked="" id="systemUpdates">
+									<label class="custom-control-label" for="systemUpdates">System Updates</label>
+								</div>
+							</li>
+							<li>
+								<div class="custom-control custom-switch">
+									<input type="checkbox" class="custom-control-input" id="noti">
+									<label class="custom-control-label" for="noti">Notifications</label>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Quick settings end -->
 
-                  </ul>
-                </nav>
-                <div class="container-fluid page-body-wrapper">
-                  <nav class="navbar p-0 fixed-top d-flex flex-row">
-                    <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
-                      <a class="navbar-brand brand-logo-mini" href="http://www.bootstrapdash.com/demo/corona/jquery/template/modern-vertical/index.html"><img src="http://www.bootstrapdash.com/demo/corona/jquery/template/assets/images/logo-mini.svg" alt="logo" /></a>
-                    </div>
-                    <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
-                      <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                        <span class="mdi mdi-menu"></span>
-                      </button>
-                      <ul class="navbar-nav w-100">
-                        <li class="nav-item w-100">
-                          <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                            <input type="text" class="form-control" placeholder="البحث عن المنتجات">
-                          </form>
-                        </li>
-                      </ul>
-                      <ul class="navbar-nav navbar-nav-right">
-                        <li class="nav-item dropdown d-none d-lg-block">
-                          <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ إنشاء مشروع جديد</a>
-                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
-                            <h6 class="p-3 mb-0">مشاريع</h6>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-file-outline text-primary"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1">تطوير البرمجيات</p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-web text-info"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1">تطوير واجهة المستخدم</p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-layers text-danger"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1">اختبار البرمجيات</p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <p class="p-3 mb-0 text-center">رؤية جميع المشاريع</p>
-                          </div>
-                        </li>
-                        <li class="nav-item nav-settings d-none d-lg-block">
-                          <a class="nav-link" href="#">
-                            <i class="mdi mdi-view-grid"></i>
-                          </a>
-                        </li>
-                        <li class="nav-item dropdown border-left">
-                          <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                            <i class="mdi mdi-email"></i>
-                            <span class="count bg-success"></span>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-                            <h6 class="p-3 mb-0">رسائل</h6>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <img src="../../../assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1">مارك يرسل لك رسالة</p>
-                                <p class="text-muted mb-0"> منذ 1 دقيقة </p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <img src="../../../assets/images/faces/face2.jpg" alt="image" class="rounded-circle profile-pic">
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1">كريغ نرسل لك رسالة</p>
-                                <p class="text-muted mb-0"> منذ 15 دقيقة </p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <img src="./assets/images/faces/face3.jpg" alt="image" class="rounded-circle profile-pic">
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject ellipsis mb-1">تحديث صورة الملف الشخصي</p>
-                                <p class="text-muted mb-0"> منذ 18 دقيقة </p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <p class="p-3 mb-0 text-center">4 رسائل جديدة</p>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown border-left">
-                          <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                            <i class="mdi mdi-bell"></i>
-                            <span class="count bg-danger"></span>
-                          </a>
-                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                            <h6 class="p-3 mb-0">إشعارات</h6>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-calendar text-success"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject mb-1">حدث اليوم</p>
-                                <p class="text-muted ellipsis mb-0"> مجرد تذكير بأن لديك حدث اليوم </p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-settings text-danger"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject mb-1">الإعدادات</p>
-                                <p class="text-muted ellipsis mb-0"> تحديث لوحة القيادة </p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-link-variant text-warning"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject mb-1">إطلاق المسؤول</p>
-                                <p class="text-muted ellipsis mb-0"> مشرف جديد نجاح باهر! </p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <p class="p-3 mb-0 text-center">اطلع على جميع الإشعارات</p>
-                          </div>
-                        </li>
-                        <li class="nav-item dropdown">
-            
-                          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
-                            <h6 class="p-3 mb-0">الملف الشخصي</h6>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-settings text-success"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject mb-1">الإعدادات</p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item preview-item">
-                              <div class="preview-thumbnail">
-                                <div class="preview-icon bg-dark rounded-circle">
-                                  <i class="mdi mdi-logout text-danger"></i>
-                                </div>
-                              </div>
-                              <div class="preview-item-content">
-                                <p class="preview-subject mb-1">تسجيل خروج</p>
-                              </div>
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <p class="p-3 mb-0 text-center">إعدادات متقدمة</p>
-                          </div>
-                        </li>
-                      </ul>
-                      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-                        <span class="mdi mdi-format-line-spacing"></span>
-                      </button>
-                    </div>
-                  </nav>
+		<!-- *************
+			************ Header section end *************
+		************* -->
+
+		 <!-- Container fluid start -->
+		 <div class="container-fluid">
+
+		   <!-- Navigation start -->
+		   <nav class="navbar navbar-expand-lg custom-navbar">
+		     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#WafiAdminNavbar" aria-controls="WafiAdminNavbar" aria-expanded="false" aria-label="Toggle navigation">
+		       <span class="navbar-toggler-icon">
+		         <i></i>
+		         <i></i>
+		         <i></i>
+		       </span>
+		     </button>
+		     <div class="collapse navbar-collapse" id="WafiAdminNavbar">
+		       <ul class="navbar-nav">
+		         <li class="nav-item dropdown">
+		           <a class="nav-link dropdown-toggle " href="index.php" id="dashboardsDropdown">
+		             <i class="icon-devices_other nav-icon"></i>
+		             لوحة التحكم
+		           </a>
+
+		         </li>
+		         <li class="nav-item dropdown">
+		           <a class="nav-link dropdown-toggle " href="Families.php" id="appsDropdown">
+		             <i class="icon-package nav-icon"></i>
+		             العائلات
+		           </a>
+		       </li>
+
+
+		           </ul>
+		         </li>
+
+
+		     </div>
+		   </nav>
+		   <!-- Navigation end -->
+
+		   <!-- *************
+		     ************ Main container start *************
+		   ************* -->
+		   <div class="main-container">
+
+		     <!-- Page header start -->
+		     <div class="page-header">
+		       <ol class="breadcrumb">
+		         <li class="breadcrumb-item">الرئيسية</li>
+		         <li class="breadcrumb-item active">لوحة التحكم</li>
+		       </ol>
+
+		       <ul class="app-actions">
+		         <li>
+		           <a href="#" id="reportrange">
+		             <span class="range-text"></span>
+		             <i class="icon-chevron-down"></i>
+		           </a>
+		         </li>
+		         <li>
+		           <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Print">
+		             <i class="icon-print"></i>
+		           </a>
+		         </li>
+		         <li>
+		           <a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Download CSV">
+		             <i class="icon-cloud_download"></i>
+		           </a>
+		         </li>
+		       </ul>
+		     </div>
+		     <!-- Page header end -->
+
+		     <!-- Content wrapper start -->
+		     <div class="content-wrapper">

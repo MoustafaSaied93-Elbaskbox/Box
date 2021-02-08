@@ -1,62 +1,79 @@
 
-          <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">  © 2021 <a href="" target="_blank">Box</a>. كل الحقوق محفوظة.</span>
-              <span class="text-muted float-none float-sm-right d-block mt-1 mt-sm-0 text-center">مصنوعة يدويا ومصنوعة من <i class="mdi mdi-heart text-danger"></i></span>
-            </div>
-          </footer>
-        </div>
-        <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-    <script src="./assets/js/jquery-3.3.1.js"></script>
-    <script src="./assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
-    <script src="./assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="./assets/vendors/progressbar.js/progressbar.min.js"></script>
-    <script src="./assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="./assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="./assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-    <!-- End plugin js for this page -->
-    <!-- inject:js -->
-    <script src="./assets/js/off-canvas.js"></script>
-    <script src="./assets/js/hoverable-collapse.js"></script>
-    <script src="./assets/js/misc.js"></script>
-    <script src="./assets/js/settings.js"></script>
-    <script src="./assets/js/todolist.js"></script>
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <script src="./assets/js/dashboard.js"></script>
-    <!-- End custom js for this page -->
-    <script src="./assets/vendors/datatables.net/jquery.dataTables.js"></script>
-    <script src="./assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-    <script src="./assets/js/data-table.js"></script>
-    <script src="./assets/js/toastr.min.js"></script>
-    <script src="./assets/js/delet.js"></script>
-    <script src="./assets/js/add.js"></script>
+
+</div>
+<!-- *************
+ ************ Main container end *************
+************* -->
 
 
+			<!-- Footer start -->
+			<footer class="main-footer">© 2021</footer>
+			<!-- Footer end -->
 
-<script>
+		</div>
+		<!-- Container fluid end -->
+
+		<!-- *************
+			************ Required JavaScript Files *************
+		************* -->
+		<!-- Required jQuery first, then Bootstrap Bundle JS -->
+		<script src="js\jquery.min.js"></script>
+		<script src="js\bootstrap.bundle.min.js"></script>
+		<script src="js\moment.js"></script>
 
 
+		<!-- *************
+			************ Vendor Js Files *************
+		************* -->
+		<!-- Slimscroll JS -->
+		<script src="vendor\slimscroll\slimscroll.min.js"></script>
+		<script src="vendor\slimscroll\custom-scrollbar.js"></script>
 
+		<!-- Daterange -->
+		<script src="vendor\daterange\daterange.js"></script>
+		<script src="vendor\daterange\custom-daterange.js"></script>
 
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
+		<!-- Chartist JS -->
+		<script src="vendor\chartist\js\chartist.min.js"></script>
+		<script src="vendor\chartist\js\chartist-tooltip.js"></script>
+		<script src="vendor\chartist\js\custom\threshold\threshold.js"></script>
+		<script src="vendor\chartist\js\custom\bar\bar-chart-orders.js"></script>
 
+		<!-- jVector Maps -->
+		<script src="vendor\jvectormap\jquery-jvectormap-2.0.3.min.js"></script>
+		<script src="vendor\jvectormap\world-mill-en.js"></script>
+		<script src="vendor\jvectormap\gdp-data.js"></script>
+		<script src="vendor\jvectormap\custom\world-map-markers2.js"></script>
 
+		<!-- Rating JS -->
+		<script src="vendor\rating\raty.js"></script>
+		<script src="vendor\rating\raty-custom.js"></script>
+		<!-- Data Tables -->
+		<script src="vendor\datatables\dataTables.min.js"></script>
+		<script src="vendor\datatables\dataTables.bootstrap.min.js"></script>
 
+		<!-- Custom Data tables -->
+		<script src="vendor\datatables\custom\custom-datatables.js"></script>
+		<script src="vendor\datatables\custom\fixedHeader.js"></script>
 
- </script>
+		<!-- Download / CSV / Copy / Print -->
+		<script src="vendor\datatables\buttons.min.js"></script>
+		<script src="vendor\datatables\jszip.min.js"></script>
+		<script src="vendor\datatables\pdfmake.min.js"></script>
+		<script src="vendor\datatables\vfs_fonts.js"></script>
+		<script src="vendor\datatables\html5.min.js"></script>
+		<script src="vendor\datatables\buttons.print.min.js"></script>
+		<!-- Datepickers -->
+		<script src="vendor\datepicker\js\picker.js"></script>
+		<script src="vendor\datepicker\js\picker.date.js"></script>
+		<script src="vendor\datepicker\js\custom-picker.js"></script>
 
+		<script src="./js/toastr.min.js"></script>
+     <script src="./js/delet.js"></script>
+     <script src="./js/add.js"></script>
 
+		<!-- Main Js Required -->
+		<script src="js\main.js"></script>
 
-  </body>
-
+	</body>
 </html>
